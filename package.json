@@ -7,12 +7,9 @@
     "clean": "rimraf dist",
     "reset": "rimraf dist && rimraf node_modules"
   },
-  "dependencies": {
-    "vue": "^3.2.31"
-  },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.2.2",
     "rimraf": "^3.0.2",
-    "vite": "^2.8.4"
+    "vite": "^2.8.4",
+    "vite-rust-plugin": "^1.0.0"
   }
 }

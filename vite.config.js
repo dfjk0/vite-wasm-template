@@ -1,13 +1,12 @@
-import { fileURLToPath, URL } from 'url'
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import ViteRustPlugin from 'vite-rust-plugin';
 
 export default defineConfig({
-  plugins: [vue()],
-  base: "./",
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
-})
+    base: './',
+    plugins: [
+        new ViteRustPlugin({
+            crateDir: './rust',
+            extraArgs: '--no-typescript',
+        }),
+    ],
+});

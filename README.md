@@ -1,6 +1,6 @@
-# Vue & Vite template
+# Vite & wasm-pack template
 
-This template should help get you started developing with Vue 3 and Vite.
+This template should help get you started developing with [Vite](https://github.com/vitejs/vite) and [wasm-pack](https://github.com/rustwasm/wasm-pack).
 
 ## Project Setup
 
